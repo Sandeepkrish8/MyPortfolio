@@ -1,36 +1,33 @@
 /**
- * ✏️  EDIT THIS FILE TO MAKE THE PORTFOLIO YOURS.
+ * ✏️  EDIT THIS FILE TO UPDATE THE PORTFOLIO.
  *
  * Every section of the site reads from here, so you never have to touch
  * the components to change text, links, skills or projects.
- * Values marked "TODO" are placeholders — replace them with your real details.
  */
 
 export const profile = {
   firstName: 'Sandeep',
-  lastName: 'Krishna', // TODO: your surname
+  lastName: 'Krishnan',
   initials: 'SK',
   role: 'Frontend Developer',
-  roles: ['React Developer', 'UI Engineer', 'Problem Solver', 'Pixel Pusher'],
-  tagline: 'Creative developer · React & the modern web',
-  bio: 'Frontend developer who turns ideas into fast, accessible and delightful interfaces. I work mostly with React, JavaScript and modern CSS, and I care about clean component architecture, performance and the small details that make a UI feel alive.',
-  bioExtra: 'I enjoy working across the stack — from REST APIs and state management to motion design and responsive layouts.',
-  quote: 'From the first commit to the last pixel.',
-  // Put a photo at public/profile.jpg and set image: './profile.jpg'
-  image: '',
-  email: 'hello@example.com', // TODO: your email
-  github: 'https://github.com/sandeepkrish8',
-  linkedin: 'https://www.linkedin.com/in/your-handle', // TODO
-  // Put your CV at public/resume.pdf
+  roles: ['React Developer', 'TypeScript Engineer', 'UI Engineer', 'Published Researcher'],
+  tagline: 'React · TypeScript · Chennai, India',
+  bio: 'I build high-performance, strictly-typed SaaS interfaces and accessible web apps. I was the founding frontend developer at an early-stage startup, where I shipped NexusHR, a full Employee Management System, end to end with React and TypeScript.',
+  bioExtra: 'MCA 2025 graduate and published researcher (IRJMETS). I’ve stepped back from the startup role to focus on placements, and I’m looking to bring strong fundamentals and fast execution to a frontend or product engineering team.',
+  quote: 'Software should be robust, and satisfying to use.',
+  image: './profile.jpg',
+  email: 'sandeepskr008@gmail.com',
+  github: 'https://github.com/Sandeepkrish8',
+  linkedin: 'https://linkedin.com/in/sandeep-krishnan-p',
   resume: './resume.pdf',
   idNumber: 'SK-0001',
   year: '2026',
   facts: [
-    { label: 'Based in', value: 'India' }, // TODO
-    { label: 'Focus', value: 'Frontend · React' },
-    { label: 'Studying', value: 'B.Tech, Computer Science' }, // TODO
-    { label: 'Batch', value: '2022 — 2026' }, // TODO
-    { label: 'Open to', value: 'Full-time & internships' },
+    { label: 'Based in', value: 'Chennai, India' },
+    { label: 'Focus', value: 'React · TypeScript' },
+    { label: 'Education', value: 'MCA, CGPA 8.63' },
+    { label: 'Graduated', value: '2025' },
+    { label: 'Open to', value: 'Frontend roles' },
   ],
 };
 
@@ -46,7 +43,7 @@ export const navLinks = [
 export const skillFamilies = [
   { id: 'languages', label: 'Languages' },
   { id: 'frontend', label: 'Frontend' },
-  { id: 'backend', label: 'Backend' },
+  { id: 'backend', label: 'APIs & IoT' },
   { id: 'databases', label: 'Databases' },
   { id: 'tools', label: 'Tools' },
   { id: 'core', label: 'Core' },
@@ -54,136 +51,146 @@ export const skillFamilies = [
 
 // icon = path inside the Devicon set (https://devicon.dev). Leave it out to show the symbol instead.
 export const skills = [
+  { symbol: 'Ts', name: 'TypeScript', family: 'languages', icon: 'typescript/typescript-original', note: 'Strict mode, typed API layers and props.' },
   { symbol: 'Js', name: 'JavaScript', family: 'languages', icon: 'javascript/javascript-original', note: 'ES6+, async/await, closures, the event loop.' },
-  { symbol: 'Ts', name: 'TypeScript', family: 'languages', icon: 'typescript/typescript-original', note: 'Typed props, generics and safer refactors.' },
-  { symbol: 'Py', name: 'Python', family: 'languages', icon: 'python/python-original', note: 'Scripting, automation and DSA practice.' },
-  { symbol: 'Jv', name: 'Java', family: 'languages', icon: 'java/java-original', note: 'OOP fundamentals and problem solving.' },
-  { symbol: 'Ht', name: 'HTML5', family: 'frontend', icon: 'html5/html5-original', note: 'Semantic, accessible markup.' },
-  { symbol: 'Cs', name: 'CSS3', family: 'frontend', icon: 'css3/css3-original', note: 'Flexbox, Grid, animations, custom properties.' },
-  { symbol: 'Re', name: 'React', family: 'frontend', icon: 'react/react-original', note: 'Hooks, Context, custom hooks, performance.' },
-  { symbol: 'Rx', name: 'Redux', family: 'frontend', icon: 'redux/redux-original', note: 'Redux Toolkit, slices and async thunks.' },
-  { symbol: 'Nx', name: 'Next.js', family: 'frontend', icon: 'nextjs/nextjs-original', note: 'Routing, SSR/SSG and API routes.' },
+  { symbol: 'Ht', name: 'HTML5', family: 'languages', icon: 'html5/html5-original', note: 'Semantic, accessible markup.' },
+  { symbol: 'Cs', name: 'CSS3', family: 'languages', icon: 'css3/css3-original', note: 'Flexbox, Grid, animations, custom properties.' },
+  { symbol: 'Py', name: 'Python', family: 'languages', icon: 'python/python-original', note: 'Used for the ML side of my sign language research.' },
+  { symbol: 'Re', name: 'React', family: 'frontend', icon: 'react/react-original', note: 'Hooks, custom hooks, component architecture.' },
+  { symbol: 'Rx', name: 'Redux Toolkit', family: 'frontend', icon: 'redux/redux-original', note: 'Slices and global state — used in HabitFlow.' },
+  { symbol: 'Ca', name: 'Context API', family: 'frontend', icon: 'react/react-original', note: 'Shared state without prop drilling.' },
+  { symbol: 'Rr', name: 'React Router', family: 'frontend', icon: 'reactrouter/reactrouter-original', note: 'Client-side routing and protected routes.' },
   { symbol: 'Tw', name: 'Tailwind CSS', family: 'frontend', icon: 'tailwindcss/tailwindcss-original', note: 'Utility-first, design-token driven UIs.' },
-  { symbol: 'Sa', name: 'Sass', family: 'frontend', icon: 'sass/sass-original', note: 'Mixins, partials and BEM structure.' },
+  { symbol: 'Bs', name: 'Bootstrap', family: 'frontend', icon: 'bootstrap/bootstrap-original', note: 'Quick responsive layouts and components.' },
   { symbol: 'Vi', name: 'Vite', family: 'frontend', icon: 'vitejs/vitejs-original', note: 'Fast dev server and production builds.' },
-  { symbol: 'No', name: 'Node.js', family: 'backend', icon: 'nodejs/nodejs-original', note: 'Runtime for APIs and tooling.' },
-  { symbol: 'Ex', name: 'Express', family: 'backend', icon: 'express/express-original', note: 'Routing, middleware and REST endpoints.' },
-  { symbol: 'Ra', name: 'REST APIs', family: 'backend', note: 'fetch/axios, status codes, pagination, caching.' },
-  { symbol: 'Jw', name: 'JWT Auth', family: 'backend', note: 'Token-based auth and protected routes.' },
-  { symbol: 'Mg', name: 'MongoDB', family: 'databases', icon: 'mongodb/mongodb-original', note: 'Documents, aggregation and Mongoose.' },
-  { symbol: 'Sq', name: 'MySQL', family: 'databases', icon: 'mysql/mysql-original', note: 'Joins, indexes and normalisation.' },
-  { symbol: 'Pg', name: 'PostgreSQL', family: 'databases', icon: 'postgresql/postgresql-original', note: 'Relational modelling and queries.' },
-  { symbol: 'Fb', name: 'Firebase', family: 'databases', icon: 'firebase/firebase-original', note: 'Auth, Firestore and hosting.' },
-  { symbol: 'Gt', name: 'Git', family: 'tools', icon: 'git/git-original', note: 'Branching, rebasing and clean history.' },
-  { symbol: 'Gh', name: 'GitHub', family: 'tools', icon: 'github/github-original', note: 'PRs, code review and Actions.' },
+  { symbol: 'Th', name: 'Three.js', family: 'frontend', icon: 'threejs/threejs-original', note: 'React Three Fiber — the 3D telescope in SkyTonight.' },
+  { symbol: 'Gs', name: 'GSAP', family: 'frontend', note: 'Timelines and scroll-triggered animation.' },
+  { symbol: 'Rc', name: 'Recharts', family: 'frontend', note: 'Dashboards and analytics charts.' },
+  { symbol: 'Ra', name: 'REST APIs', family: 'backend', note: 'Typed API layers with loading and error states.' },
+  { symbol: 'Sf', name: 'Serverless', family: 'backend', icon: 'vercel/vercel-original', note: 'Vercel Functions to proxy API keys securely.' },
+  { symbol: 'Tf', name: 'TensorFlow Lite', family: 'backend', icon: 'tensorflow/tensorflow-original', note: 'On-device (TinyML) gesture recognition.' },
+  { symbol: 'Cv', name: 'OpenCV', family: 'backend', icon: 'opencv/opencv-original', note: 'Image processing for the ESP32-CAM pipeline.' },
+  { symbol: 'Mg', name: 'MongoDB', family: 'databases', icon: 'mongodb/mongodb-original', note: 'Document data for MERN apps.' },
+  { symbol: 'Sq', name: 'SQL', family: 'databases', note: 'Joins, normalisation — NPTEL DBMS certified.' },
+  { symbol: 'Gt', name: 'Git', family: 'tools', icon: 'git/git-original', note: 'Branching, pull requests and code reviews.' },
+  { symbol: 'Gh', name: 'GitHub', family: 'tools', icon: 'github/github-original', note: 'Repos, PRs and collaboration.' },
+  { symbol: 'Vc', name: 'Vercel', family: 'tools', icon: 'vercel/vercel-original', note: 'Deploying and hosting every project.' },
+  { symbol: 'Pm', name: 'Postman', family: 'tools', icon: 'postman/postman-original', note: 'Testing and debugging APIs.' },
   { symbol: 'Vs', name: 'VS Code', family: 'tools', icon: 'vscode/vscode-original', note: 'Debugging, snippets and extensions.' },
-  { symbol: 'Fi', name: 'Figma', family: 'tools', icon: 'figma/figma-original', note: 'Reading designs and handing off to code.' },
-  { symbol: 'Pm', name: 'Postman', family: 'tools', icon: 'postman/postman-original', note: 'Testing and documenting APIs.' },
-  { symbol: 'Jt', name: 'Jest', family: 'tools', icon: 'jest/jest-plain', note: 'Unit tests and React Testing Library.' },
+  { symbol: 'Rb', name: 'RBAC', family: 'core', note: 'Role-based access across 5 roles in NexusHR.' },
   { symbol: 'Ds', name: 'Data Structures', family: 'core', note: 'Arrays, maps, trees, graphs.' },
-  { symbol: 'Al', name: 'Algorithms', family: 'core', note: 'Sorting, searching, two pointers, DP.' },
-  { symbol: 'Op', name: 'OOP', family: 'core', note: 'Encapsulation, inheritance, composition.' },
+  { symbol: 'Al', name: 'Algorithms', family: 'core', note: 'Regular LeetCode practice.' },
   { symbol: 'Rd', name: 'Responsive Design', family: 'core', note: 'Mobile-first, fluid type, breakpoints.' },
-  { symbol: 'Ax', name: 'Accessibility', family: 'core', note: 'ARIA, focus management, contrast.' },
-  { symbol: 'Sd', name: 'System Design', family: 'core', note: 'Frontend architecture and trade-offs.' },
+  { symbol: 'Ax', name: 'Accessibility', family: 'core', note: 'Semantic HTML, focus states, reduced motion.' },
+  { symbol: 'Pf', name: 'Performance', family: 'core', note: 'Lighthouse audits, lazy loading, DOM optimisation.' },
 ];
 
 // visual: 'heatmap' | 'bars' | 'rings' | 'wave' — a generated animated preview for each project.
+// live is optional; liveLabel changes the button text (e.g. "Read paper").
 export const projects = [
   {
-    title: 'DevBoard',
-    subtitle: 'Kanban task manager',
+    title: 'NexusHR',
+    subtitle: 'HR SaaS platform',
     year: '2026',
-    description: 'A drag-and-drop Kanban board with columns, labels and filters. State lives in Redux Toolkit and is persisted to localStorage, with optimistic updates for a snappy feel.',
-    stack: ['React', 'Redux Toolkit', 'CSS Modules'],
-    live: '#', // TODO
-    code: 'https://github.com/sandeepkrish8',
+    description: 'An India-focused Employee Management System with role-based access for 5 corporate roles. Its payroll engine calculates PF, ESI, Professional Tax and TDS, alongside a drag-and-drop recruitment Kanban, shift schedules and attendance tracking.',
+    stack: ['React', 'TypeScript', 'Tailwind CSS', 'Recharts'],
+    code: 'https://github.com/Sandeepkrish8/EMPLOYEE_Sys',
     visual: 'heatmap',
   },
   {
-    title: 'Pulse Weather',
-    subtitle: 'Weather dashboard',
-    year: '2025',
-    description: 'Real-time weather from a REST API with search, debounced input, unit switching and a 7-day forecast chart. Built mobile-first with skeleton loaders and error states.',
-    stack: ['React', 'REST API', 'Chart.js'],
-    live: '#',
-    code: 'https://github.com/sandeepkrish8',
-    visual: 'bars',
-  },
-  {
-    title: 'ShopLite',
-    subtitle: 'E-commerce storefront',
-    year: '2025',
-    description: 'Product listing, filters, cart and checkout flow. Cart state is shared with the Context API + useReducer, and routes are code-split with React.lazy.',
-    stack: ['React', 'Context API', 'Node.js', 'MongoDB'],
-    live: '#',
-    code: 'https://github.com/sandeepkrish8',
+    title: 'SkyTonight',
+    subtitle: '3D astronomy dashboard',
+    year: '2026',
+    description: 'A real-time astronomy dashboard with an interactive 3D telescope view of live planet positions, moon phases and altitude/azimuth for your location. Pulls NASA APOD, ISS tracking and weather data through Vercel serverless functions, with an AR mode on mobile.',
+    stack: ['React', 'Three.js', 'Tailwind CSS', 'Vercel'],
+    live: 'https://sky-tonight-ten.vercel.app/',
+    code: 'https://github.com/Sandeepkrish8/SkyTonight',
     visual: 'rings',
   },
   {
-    title: 'Snippet Vault',
-    subtitle: 'Code snippet manager',
-    year: '2024',
-    description: 'Save, tag and search code snippets with syntax highlighting. Includes keyboard shortcuts, fuzzy search and a dark mode that respects system preferences.',
-    stack: ['React', 'Express', 'JWT'],
-    live: '#',
-    code: 'https://github.com/sandeepkrish8',
+    title: 'HabitFlow',
+    subtitle: 'Gamified habit tracker',
+    year: '2026',
+    description: 'A modern habit tracker with streaks, an SVG Pomodoro timer and progress charts. State is managed with Redux Toolkit, and the stats dashboard is built with Recharts.',
+    stack: ['React', 'Redux Toolkit', 'Recharts', 'Tailwind CSS'],
+    live: 'https://to-habit-trackerr-git-main-sandeep-krishs-projects.vercel.app/',
+    code: 'https://github.com/Sandeepkrish8/To-Habit-Tracker',
+    visual: 'bars',
+  },
+  {
+    title: 'SignX',
+    subtitle: 'Sign language recognition · IoT + ML',
+    year: '2025',
+    description: 'A real-time ASL gesture recognition system, from ESP32-CAM hardware to model deployment: ~85% on-device accuracy with TinyML and ~95% with edge-server inference. Published in IRJMETS (Vol. 07, Issue 06, June 2025).',
+    stack: ['ESP32-CAM', 'TensorFlow Lite', 'CNN', 'OpenCV'],
+    live: 'https://www.irjmets.com/upload_newfiles/irjmets70600077672/paper_file/irjmets70600077672.pdf',
+    liveLabel: 'Read paper',
+    code: 'https://github.com/Sandeepkrish8/SignX-Language-',
     visual: 'wave',
   },
 ];
 
 export const experience = [
   {
-    year: '2026',
-    type: 'Experience',
-    title: 'Frontend Developer Intern', // TODO
-    org: 'Company Name',
-    period: 'Jan 2026 — Present',
-    points: [
-      'Built reusable React components for a design system used across products.',
-      'Improved Lighthouse performance score by lazy-loading routes and images.',
-    ],
-    tags: ['React', 'TypeScript', 'REST'],
-  },
-  {
     year: '2025',
-    type: 'Open Source',
-    title: 'Contributor',
-    org: 'GitHub',
-    period: '2025',
+    type: 'Experience',
+    title: 'Founding Frontend Developer',
+    org: 'VCodez · Early-stage startup',
+    period: '2025 — 2026',
     points: [
-      'Fixed UI bugs and improved docs in community React projects.',
-      'Learned code review etiquette, Git workflows and CI pipelines.',
+      'Built NexusHR, a full Employee Management System, owning the architecture, component design and delivery of the entire client app.',
+      'Implemented role-based access control across five user roles, with permissions on routes, views and actions.',
+      'Engineered a payroll module computing Indian statutory deductions (PF, ESI, Professional Tax, TDS).',
+      'Standardised the codebase on React + TypeScript (strict mode) with typed REST API layers.',
     ],
-    tags: ['Git', 'GitHub', 'Collaboration'],
+    tags: ['React', 'TypeScript', 'RBAC', 'REST'],
   },
   {
-    year: '2022',
-    type: 'Education',
-    title: 'B.Tech, Computer Science', // TODO
-    org: 'Your University',
-    period: '2022 — 2026',
+    year: '2024',
+    type: 'Internship',
+    title: 'Web Development Intern',
+    org: 'Unified Mentor',
+    period: 'May 2024 — Jun 2024',
     points: [
-      'Core coursework in data structures, algorithms, DBMS and web technologies.',
-      'Led the college web-dev club workshops on HTML, CSS and React.',
+      'Built reusable, modular JavaScript components across multiple pages, reducing code duplication by ~30%.',
+      'Improved UI responsiveness through CSS and DOM optimisations.',
+      'Collaborated through Git workflows: branching, pull requests and code reviews.',
     ],
-    tags: ['DSA', 'DBMS', 'Web'],
+    tags: ['JavaScript', 'CSS', 'Git'],
+  },
+  {
+    year: '2023',
+    type: 'Education',
+    title: 'Master of Computer Applications',
+    org: 'Dr. M.G.R. Educational and Research Institute, Chennai',
+    period: '2023 — 2025 · CGPA 8.63',
+    points: [
+      'Published research on a Sign Language Recognition System using ESP32-CAM (IRJMETS, Impact Factor 8.187).',
+      'Completed MERN stack development training with Acciojob.',
+    ],
+    tags: ['MCA', 'Research', 'MERN'],
+  },
+  {
+    year: '2020',
+    type: 'Education',
+    title: 'Bachelor of Computer Applications',
+    org: 'Vel Tech Ranga Sanku Arts and Sciences College',
+    period: '2020 — 2023 · CGPA 8.0',
+    points: ['Foundations in programming, data structures, databases and web technologies.'],
+    tags: ['BCA', 'DSA', 'DBMS'],
   },
 ];
 
 export const certifications = [
-  { name: 'Meta Front-End Developer', issuer: 'Coursera', year: '2025' }, // TODO
-  { name: 'JavaScript Algorithms & Data Structures', issuer: 'freeCodeCamp', year: '2025' },
-  { name: 'Responsive Web Design', issuer: 'freeCodeCamp', year: '2024' },
-  { name: 'GitHub Foundations', issuer: 'GitHub', year: '2024' },
-  { name: 'React — The Complete Guide', issuer: 'Udemy', year: '2024' },
-  { name: 'MongoDB Basics', issuer: 'MongoDB University', year: '2023' },
+  { name: 'Hand Gesture Recognition System Using IoT', issuer: 'IRJMETS · Publication', year: '2025' },
+  { name: 'MERN Stack Development Training', issuer: 'Acciojob', year: '2025' },
+  { name: 'Database Management Systems', issuer: 'NPTEL', year: '' },
 ];
 
-// icon: 'code' | 'trophy' | 'flag' | 'star'
+// icon: 'code' | 'trophy' | 'flag' | 'star'. decimals shows numbers like 8.63.
 export const achievements = [
-  { value: 300, suffix: '+', label: 'LeetCode', caption: 'Problems solved', icon: 'code' }, // TODO
-  { value: 15, suffix: '+', label: 'Projects', caption: 'Built & shipped', icon: 'star' },
-  { value: 1, prefix: 'No. ', label: 'Department', caption: 'Hackathon winner', icon: 'trophy' },
-  { value: 500, suffix: '+', label: 'GitHub', caption: 'Contributions this year', icon: 'flag' },
+  { value: 8.187, decimals: 3, label: 'IRJMETS', caption: 'Journal impact factor', icon: 'star' },
+  { value: 8.63, decimals: 2, label: 'MCA', caption: 'CGPA out of 10', icon: 'trophy' },
+  { value: 95, prefix: '~', suffix: '%', label: 'SignX model', caption: 'Edge-server accuracy', icon: 'code' },
+  { value: 30, prefix: '~', suffix: '%', label: 'Unified Mentor', caption: 'Less duplicated code', icon: 'flag' },
 ];

@@ -90,7 +90,7 @@ export default function Hero({ profile }) {
           <SplitText text={`${profile.role.split(' ').slice(1).join(' ')}.`} delay={0.45} stagger={0.04} />
         </h1>
         <p className="hero__tagline">
-          I’m a <TextScramble words={profile.roles} /> <span className="hero__tagline-soft">· {profile.tagline}</span>
+          I’m a <TextScramble words={profile.roles} /> <span className="hero__tagline-soft">{profile.tagline}</span>
         </p>
       </div>
 

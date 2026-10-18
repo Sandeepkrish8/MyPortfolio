@@ -7,7 +7,8 @@ import { useInView } from '../hooks/useInView';
 
 function Stat({ item, index }) {
   const [ref, inView] = useInView({ threshold: 0.4 });
-  const value = useCountUp(item.value, inView, 1400 + index * 200);
+  const decimals = item.decimals || 0;
+  const value = useCountUp(item.value, inView, 1400 + index * 200, decimals);
 
   return (
     <Reveal delay={index * 0.1} className="achievement-wrap">
@@ -18,7 +19,7 @@ function Stat({ item, index }) {
           </span>
           <p className="achievement__value">
             {item.prefix && <span className="achievement__prefix">{item.prefix}</span>}
-            {value}
+            {value.toFixed(decimals)}
             {item.suffix && <span className="achievement__suffix">{item.suffix}</span>}
           </p>
           <p className="achievement__label">{item.label}</p>

@@ -58,9 +58,11 @@ export default function Projects({ projects }) {
                       ))}
                     </ul>
                     <div className="panel__links">
-                      <a href={project.live} className="btn btn--dark btn--sm" target="_blank" rel="noreferrer" tabIndex={isActive ? 0 : -1}>
-                        Live demo <Icon name="arrowUpRight" size={14} />
-                      </a>
+                      {project.live && (
+                        <a href={project.live} className="btn btn--dark btn--sm" target="_blank" rel="noreferrer" tabIndex={isActive ? 0 : -1}>
+                          {project.liveLabel || 'Live demo'} <Icon name="arrowUpRight" size={14} />
+                        </a>
+                      )}
                       <a href={project.code} className="link-underline" target="_blank" rel="noreferrer" tabIndex={isActive ? 0 : -1}>
                         Source code <Icon name="arrowUpRight" size={14} />
                       </a>
