@@ -21,7 +21,7 @@ export default function Certifications({ items }) {
         label="Certifications"
         title="Always"
         accent="learning."
-        note={`${items.length} certifications across frontend, JavaScript, databases and tooling.`}
+        note="Certifications, training and published research."
       />
 
       <Reveal className="certs__list" onMouseLeave={() => setHovered(null)}>

@@ -37,6 +37,9 @@ export default function About({ profile, topSkills }) {
           <a href={profile.linkedin} className="link-underline" target="_blank" rel="noreferrer">
             LinkedIn <Icon name="arrowUpRight" size={14} />
           </a>
+          <a href={profile.leetcode} className="link-underline" target="_blank" rel="noreferrer">
+            LeetCode <Icon name="arrowUpRight" size={14} />
+          </a>
         </Reveal>
       </div>
 

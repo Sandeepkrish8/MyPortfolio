@@ -1,6 +1,7 @@
 import { seeded } from '../utils/motion';
 
-/** Generated, animated artwork for each project card — no screenshots needed. */
+/** Generated, animated artwork for each project card — no screenshots needed.
+ * variant: 'heatmap' | 'bars' | 'posters' | 'rings' | 'wave' */
 export default function ProjectVisual({ variant, seed = 1 }) {
   const random = seeded(seed * 9973);
 
@@ -21,6 +22,24 @@ export default function ProjectVisual({ variant, seed = 1 }) {
         {Array.from({ length: 22 }, (_, i) => (
           <span key={i} style={{ '--h': (0.25 + random() * 0.75).toFixed(2), '--d': `${(i * 0.08).toFixed(2)}s` }} />
         ))}
+      </div>
+    );
+  }
+
+  if (variant === 'posters') {
+    return (
+      <div className="pv pv--posters" aria-hidden="true">
+        {Array.from({ length: 3 }, (_, col) => {
+          const posters = Array.from({ length: 4 }, () => random().toFixed(2));
+          return (
+            <div className="pv__column" key={col} style={{ '--d': `${14 + col * 4}s`, '--dir': col % 2 ? 'reverse' : 'normal' }}>
+              {/* rendered twice so the column can loop seamlessly */}
+              {[...posters, ...posters].map((v, i) => (
+                <span key={i} style={{ '--v': v }} />
+              ))}
+            </div>
+          );
+        })}
       </div>
     );
   }

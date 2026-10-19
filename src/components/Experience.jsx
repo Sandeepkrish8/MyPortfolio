@@ -63,7 +63,10 @@ export default function Experience({ items }) {
             >
               <span className="timeline__dot" aria-hidden="true" />
               <Reveal className="timeline__card">
-                <p className="badge">{item.type}</p>
+                <p className="timeline__meta">
+                  <span className="badge">{item.type}</span>
+                  <span className="timeline__year">{item.year}</span>
+                </p>
                 <h3 className="timeline__title">{item.title}</h3>
                 <p className="timeline__org">
                   {item.org} <span className="mono">· {item.period}</span>

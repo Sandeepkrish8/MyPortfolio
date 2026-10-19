@@ -76,6 +76,9 @@ export default function Contact({ profile }) {
             <a href={profile.linkedin} className="link-underline" target="_blank" rel="noreferrer">
               LinkedIn <Icon name="arrowUpRight" size={14} />
             </a>
+            <a href={profile.leetcode} className="link-underline" target="_blank" rel="noreferrer">
+              LeetCode <Icon name="arrowUpRight" size={14} />
+            </a>
             <a href={profile.resume} className="link-underline" download>
               Résumé <Icon name="arrowDown" size={14} />
             </a>
