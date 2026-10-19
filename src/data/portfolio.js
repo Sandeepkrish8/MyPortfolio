@@ -10,15 +10,16 @@ export const profile = {
   lastName: 'Krishnan',
   initials: 'SK',
   role: 'Frontend Developer',
-  roles: ['React Developer', 'TypeScript Engineer', 'UI Engineer', 'Published Researcher'],
+  roles: ['React Developer', 'TypeScript Engineer', 'Hackathon Winner', 'Published Researcher'],
   tagline: 'React · TypeScript · Chennai, India',
   bio: 'I build high-performance, strictly-typed SaaS interfaces and accessible web apps. I was the founding frontend developer at an early-stage startup, where I shipped NexusHR, a full Employee Management System, end to end with React and TypeScript.',
-  bioExtra: 'MCA 2025 graduate and published researcher (IRJMETS). I’ve stepped back from the startup role to focus on placements, and I’m looking to bring strong fundamentals and fast execution to a frontend or product engineering team.',
+  bioExtra: 'MCA 2025 graduate, 1st-prize winner at the Acciojob hackathon and published researcher (IRJMETS). I’ve stepped back from the startup role to focus on placements, and I’m looking to bring strong fundamentals and fast execution to a frontend or product engineering team.',
   quote: 'Software should be robust, and satisfying to use.',
   image: './profile.jpg',
   email: 'sandeepskr008@gmail.com',
   github: 'https://github.com/Sandeepkrish8',
   linkedin: 'https://linkedin.com/in/sandeep-krishnan-p',
+  leetcode: 'https://leetcode.com/u/Sandeepkr0108/',
   resume: './resume.pdf',
   idNumber: 'SK-0001',
   year: '2026',
@@ -43,7 +44,7 @@ export const navLinks = [
 export const skillFamilies = [
   { id: 'languages', label: 'Languages' },
   { id: 'frontend', label: 'Frontend' },
-  { id: 'backend', label: 'APIs & IoT' },
+  { id: 'backend', label: 'Backend & IoT' },
   { id: 'databases', label: 'Databases' },
   { id: 'tools', label: 'Tools' },
   { id: 'core', label: 'Core' },
@@ -64,13 +65,16 @@ export const skills = [
   { symbol: 'Bs', name: 'Bootstrap', family: 'frontend', icon: 'bootstrap/bootstrap-original', note: 'Quick responsive layouts and components.' },
   { symbol: 'Vi', name: 'Vite', family: 'frontend', icon: 'vitejs/vitejs-original', note: 'Fast dev server and production builds.' },
   { symbol: 'Th', name: 'Three.js', family: 'frontend', icon: 'threejs/threejs-original', note: 'React Three Fiber — the 3D telescope in SkyTonight.' },
+  { symbol: 'Tq', name: 'TanStack Query', family: 'frontend', note: 'Caching, request cancellation and infinite scroll in Movie Discovery.' },
   { symbol: 'Gs', name: 'GSAP', family: 'frontend', note: 'Timelines and scroll-triggered animation.' },
   { symbol: 'Rc', name: 'Recharts', family: 'frontend', note: 'Dashboards and analytics charts.' },
   { symbol: 'Ra', name: 'REST APIs', family: 'backend', note: 'Typed API layers with loading and error states.' },
+  { symbol: 'No', name: 'Node.js', family: 'backend', icon: 'nodejs/nodejs-original', note: 'TypeScript APIs — the Movie Discovery server.' },
+  { symbol: 'Ex', name: 'Express', family: 'backend', icon: 'express/express-original', note: 'Routes, middleware and a single error handler.' },
   { symbol: 'Sf', name: 'Serverless', family: 'backend', icon: 'vercel/vercel-original', note: 'Vercel Functions to proxy API keys securely.' },
   { symbol: 'Tf', name: 'TensorFlow Lite', family: 'backend', icon: 'tensorflow/tensorflow-original', note: 'On-device (TinyML) gesture recognition.' },
   { symbol: 'Cv', name: 'OpenCV', family: 'backend', icon: 'opencv/opencv-original', note: 'Image processing for the ESP32-CAM pipeline.' },
-  { symbol: 'Mg', name: 'MongoDB', family: 'databases', icon: 'mongodb/mongodb-original', note: 'Document data for MERN apps.' },
+  { symbol: 'Mg', name: 'MongoDB', family: 'databases', icon: 'mongodb/mongodb-original', note: 'Mongoose schemas — the Movie Discovery wishlist.' },
   { symbol: 'Sq', name: 'SQL', family: 'databases', note: 'Joins, normalisation — NPTEL DBMS certified.' },
   { symbol: 'Gt', name: 'Git', family: 'tools', icon: 'git/git-original', note: 'Branching, pull requests and code reviews.' },
   { symbol: 'Gh', name: 'GitHub', family: 'tools', icon: 'github/github-original', note: 'Repos, PRs and collaboration.' },
@@ -85,7 +89,7 @@ export const skills = [
   { symbol: 'Pf', name: 'Performance', family: 'core', note: 'Lighthouse audits, lazy loading, DOM optimisation.' },
 ];
 
-// visual: 'heatmap' | 'bars' | 'rings' | 'wave' — a generated animated preview for each project.
+// visual: 'heatmap' | 'bars' | 'posters' | 'rings' | 'wave' — a generated animated preview for each project.
 // live is optional; liveLabel changes the button text (e.g. "Read paper").
 export const projects = [
   {
@@ -96,6 +100,16 @@ export const projects = [
     stack: ['React', 'TypeScript', 'Tailwind CSS', 'Recharts'],
     code: 'https://github.com/Sandeepkrish8/EMPLOYEE_Sys',
     visual: 'heatmap',
+  },
+  {
+    title: 'Movie Discovery',
+    subtitle: 'Full-stack movie browser',
+    year: '2026',
+    description: 'Browse films by genre and year, search, sort, scroll through endless results and keep a wishlist. The Express API caches TMDB responses, retries with backoff and serves stale data when the upstream is down; the React client debounces search and keeps all filters in the URL.',
+    stack: ['React', 'TypeScript', 'TanStack Query', 'Node.js', 'Express', 'MongoDB'],
+    live: 'https://movie-discovery-tau.vercel.app/',
+    code: 'https://github.com/Sandeepkrish8/movie-discovery',
+    visual: 'posters',
   },
   {
     title: 'SkyTonight',
@@ -189,8 +203,8 @@ export const certifications = [
 
 // icon: 'code' | 'trophy' | 'flag' | 'star'. decimals shows numbers like 8.63.
 export const achievements = [
+  { value: 1, prefix: 'No. ', label: 'Acciojob Hackathon', caption: '1st prize winner', icon: 'trophy' },
   { value: 8.187, decimals: 3, label: 'IRJMETS', caption: 'Journal impact factor', icon: 'star' },
-  { value: 8.63, decimals: 2, label: 'MCA', caption: 'CGPA out of 10', icon: 'trophy' },
+  { value: 8.63, decimals: 2, label: 'MCA', caption: 'CGPA out of 10', icon: 'flag' },
   { value: 95, prefix: '~', suffix: '%', label: 'SignX model', caption: 'Edge-server accuracy', icon: 'code' },
-  { value: 30, prefix: '~', suffix: '%', label: 'Unified Mentor', caption: 'Less duplicated code', icon: 'flag' },
 ];
