@@ -12,8 +12,8 @@ export const profile = {
   role: 'Frontend Developer',
   roles: ['React Developer', 'TypeScript Engineer', 'Hackathon Winner', 'Published Researcher'],
   tagline: 'React · TypeScript · Chennai, India',
-  bio: 'I build high-performance, strictly-typed SaaS interfaces and accessible web apps. I was the founding frontend developer at an early-stage startup, where I shipped NexusHR, a full Employee Management System, end to end with React and TypeScript.',
-  bioExtra: 'MCA 2025 graduate, 1st-prize winner at the Acciojob hackathon and published researcher (IRJMETS). I’ve stepped back from the startup role to focus on placements, and I’m looking to bring strong fundamentals and fast execution to a frontend or product engineering team.',
+  bio: 'I build high-performance, strictly-typed SaaS interfaces and accessible web apps with React and TypeScript — from NexusHR, a full Employee Management System, to a full-stack movie discovery app and a 3D astronomy dashboard.',
+  bioExtra: 'MCA 2025 graduate, trained as a frontend developer at Acciojob, 1st-prize winner at the Acciojob hackathon and published researcher (IRJMETS). I’m looking to bring strong fundamentals and fast execution to a frontend or product engineering team.',
   quote: 'Software should be robust, and satisfying to use.',
   image: './profile.jpg',
   email: 'sandeepskr008@gmail.com',
@@ -147,17 +147,16 @@ export const projects = [
 export const experience = [
   {
     year: '2025',
-    type: 'Experience',
-    title: 'Founding Frontend Developer',
-    org: 'VCodez · Early-stage startup',
-    period: '2025 — 2026',
+    type: 'Training',
+    title: 'Frontend Developer Course',
+    org: 'Acciojob',
+    period: '2025',
     points: [
-      'Built NexusHR, a full Employee Management System, owning the architecture, component design and delivery of the entire client app.',
-      'Implemented role-based access control across five user roles, with permissions on routes, views and actions.',
-      'Engineered a payroll module computing Indian statutory deductions (PF, ESI, Professional Tax, TDS).',
-      'Standardised the codebase on React + TypeScript (strict mode) with typed REST API layers.',
+      'Hands-on training in semantic HTML, CSS, Bootstrap and modern JavaScript (DOM, events, browser APIs).',
+      'Built React apps and dozens of graded assignments, reviewed through GitHub.',
+      'Won 1st prize at the Acciojob hackathon.',
     ],
-    tags: ['React', 'TypeScript', 'RBAC', 'REST'],
+    tags: ['HTML', 'CSS', 'JavaScript', 'React'],
   },
   {
     year: '2024',
@@ -175,19 +174,18 @@ export const experience = [
   {
     year: '2023',
     type: 'Education',
-    title: 'Master of Computer Applications',
+    title: 'Master of Computer Applications (MCA)',
     org: 'Dr. M.G.R. Educational and Research Institute, Chennai',
     period: '2023 — 2025 · CGPA 8.63',
     points: [
       'Published research on a Sign Language Recognition System using ESP32-CAM (IRJMETS, Impact Factor 8.187).',
-      'Completed MERN stack development training with Acciojob.',
     ],
-    tags: ['MCA', 'Research', 'MERN'],
+    tags: ['MCA', 'Research', 'IoT'],
   },
   {
     year: '2020',
     type: 'Education',
-    title: 'Bachelor of Computer Applications',
+    title: 'Bachelor of Computer Applications (BCA)',
     org: 'Vel Tech Ranga Sanku Arts and Sciences College',
     period: '2020 — 2023 · CGPA 8.0',
     points: ['Foundations in programming, data structures, databases and web technologies.'],
@@ -197,7 +195,7 @@ export const experience = [
 
 export const certifications = [
   { name: 'Hand Gesture Recognition System Using IoT', issuer: 'IRJMETS · Publication', year: '2025' },
-  { name: 'MERN Stack Development Training', issuer: 'Acciojob', year: '2025' },
+  { name: 'Frontend Developer Course', issuer: 'Acciojob', year: '2025' },
   { name: 'Database Management Systems', issuer: 'NPTEL', year: '' },
 ];
 
